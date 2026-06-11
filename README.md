@@ -23,21 +23,16 @@ This project automatically groups customers into meaningful segments based on pu
 
 ## Features
 
-✅ Upload any customer CSV dataset
+Core capabilities include:
 
-✅ Automatic data preview and validation
-
-✅ Dynamic feature selection
-
-✅ K-Means clustering
-
-✅ Interactive visualizations
-
-✅ Customer personas generation
-
-✅ Business recommendations
-
-✅ Download segmented dataset
+* Flexible customer dataset ingestion through CSV uploads
+* Automated data preview and quality validation
+* Dynamic feature selection for segmentation analysis
+* Customer grouping using K-Means clustering
+* Interactive visual analytics for cluster exploration
+* Automated customer persona generation
+* Actionable business recommendations based on segment behavior
+* Exportable segmented datasets for further analysis and reporting
 
 ---
 
@@ -67,31 +62,22 @@ Instead of analyzing thousands of records manually, the model automatically disc
 
 ## Application Workflow
 
-Upload Dataset
+1. Upload customer dataset (CSV)
+2. Preview data and key metrics
+3. Select segmentation features
+4. Generate customer clusters using K-Means
+5. Explore interactive cluster visualizations
+6. Review customer personas and segment summaries
+7. Receive business recommendations
+8. Download the segmented dataset
 
-    ⬇️
+### Key Outcomes
 
-Select Features
-
-    ⬇️
-
-Generate Customer Segments
-
-    ⬇️
-
-Visualize Clusters
-
-    ⬇️
-
-Generate Customer Personas
-
-    ⬇️
-
-Business Recommendations
-
-    ⬇️
-
-Download Results
+* Identify high-value and low-engagement customer groups
+* Discover hidden patterns in customer behavior
+* Support targeted marketing and retention strategies
+* Reduce manual analysis through automated segmentation
+* Convert raw customer data into actionable business insights
 
 ---
 
@@ -109,15 +95,9 @@ Download Results
 
 ### Dashboard
 
-<img src="screenshots/dashboard.png" width="900"/>
-
 ### Customer Segmentation
 
-<img src="screenshots/clustering.png" width="900"/>
-
 ### Personas & Recommendations
-
-<img src="screenshots/personas.png" width="900"/>
 
 ---
 
@@ -155,7 +135,7 @@ streamlit run app.py
 ---
 
 ### Developed by Rohith Kumar Jogi
+
 🔗 LinkedIn: https://www.linkedin.com/in/your-linkedin-profile/
 
 ---
-
