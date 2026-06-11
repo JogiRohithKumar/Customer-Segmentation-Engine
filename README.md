@@ -1,6 +1,6 @@
-# AIML-K-Means-Clustering-Customer-Segmentation
+# Customer Segmentation Engine
 
-The goal is to apply **K-Means Clustering**, an unsupervised learning technique, to segment data into distinct groups based on patterns in their features.
+Customer Intelligence through Unsupervised Machine Learning
 
 ## 📊 Dataset
 The dataset used for this task contains customer attributes relevant to marketing segmentation. Features such as annual income and spending score were utilized to uncover natural groupings.
