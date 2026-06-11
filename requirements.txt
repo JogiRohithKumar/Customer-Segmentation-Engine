@@ -1,8 +1,6 @@
-:::writing{variant="standard" id="41852"}
 streamlit
 pandas
 numpy
 scikit-learn
 matplotlib
 plotly
-:::
