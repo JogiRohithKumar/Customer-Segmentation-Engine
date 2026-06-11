@@ -157,26 +157,26 @@ if uploaded_file is not None:
         
         for cluster in cluster_profiles.index:
 
-        income = cluster_profiles.iloc[cluster][0]
-        spending = cluster_profiles.iloc[cluster][1]
-    
-        if income >= 70 and spending >= 70:
-    
-            st.success(
-                f"⭐ Cluster {cluster}: Premium Customers → Luxury Product Campaigns"
-            )
-    
-        elif income <= 40 and spending <= 40:
-    
-            st.warning(
-                f"💰 Cluster {cluster}: Budget Customers → Discount Campaigns"
-            )
-    
-        else:
-    
-            st.info(
-                f"🎯 Cluster {cluster}: Regular Customers → Loyalty Programs"
-            )
+            income = cluster_profiles.iloc[cluster][0]
+            spending = cluster_profiles.iloc[cluster][1]
+        
+            if income >= 70 and spending >= 70:
+        
+                st.success(
+                    f"⭐ Cluster {cluster}: Premium Customers → Luxury Product Campaigns"
+                )
+        
+            elif income <= 40 and spending <= 40:
+        
+                st.warning(
+                    f"💰 Cluster {cluster}: Budget Customers → Discount Campaigns"
+                )
+        
+            else:
+        
+                st.info(
+                    f"🎯 Cluster {cluster}: Regular Customers → Loyalty Programs"
+                )
         
 
         st.subheader("Cluster Details")
