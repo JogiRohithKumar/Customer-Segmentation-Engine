@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 import pandas as pd
 
@@ -43,5 +42,3 @@ if uploaded_file is not None:
 
 else:
     st.info("Please upload a CSV file to continue.")
-```
-
