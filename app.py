@@ -75,6 +75,7 @@ if uploaded_file is not None:
     )
 
     if st.button("🚀 Generate Customer Segments"):
+        st.write("Button Clicked")
 
         X = df[selected_features]
 
