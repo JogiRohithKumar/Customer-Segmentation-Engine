@@ -75,7 +75,6 @@ if uploaded_file is not None:
     )
 
     if st.button("🚀 Generate Customer Segments"):
-        st.write("Button Clicked")
 
         X = df[selected_features]
 
@@ -118,6 +117,60 @@ if uploaded_file is not None:
         summary.columns = ["Cluster", "Customer Count"]
 
         st.dataframe(summary, use_container_width=True)
+
+        # -------------------------
+        # Customer Personas
+        # -------------------------
+        
+        st.subheader("Customer Personas")
+        
+        cluster_profiles = (
+            result_df.groupby("Cluster")[selected_features]
+            .mean()
+            .round(2)
+        )
+        
+        st.dataframe(
+            cluster_profiles,
+            use_container_width=True
+        )
+        
+        # -------------------------
+        # Business Recommendations
+        # -------------------------
+        
+        st.subheader("Business Recommendations")
+        
+        for cluster in cluster_profiles.index:
+        
+            income = cluster_profiles.loc[
+                cluster,
+                "Annual Income (k$)"
+            ]
+        
+            spending = cluster_profiles.loc[
+                cluster,
+                "Spending Score (1-100)"
+            ]
+        
+        if income > 70 and spending > 70:
+    
+            st.success(
+                f"⭐ Cluster {cluster}: Premium Customers → Luxury Product Campaigns"
+            )
+        
+        elif income < 40 and spending < 40:
+    
+            st.warning(
+                f"💰 Cluster {cluster}: Budget Customers → Discount Campaigns"
+            )
+        
+        else:
+    
+            st.info(
+                f"🎯 Cluster {cluster}: Regular Customers → Loyalty Programs"
+            )
+        
 
         st.subheader("Cluster Details")
 
